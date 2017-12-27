@@ -1,0 +1,7 @@
+language: csharp
+solution: AdventOfCode.sln
+mono: none
+install:
+  - dotnet restore
+script:
+  - cd test/AdventOfCode.Test && dotnet xunit
