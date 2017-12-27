@@ -19,7 +19,7 @@ namespace AdventOfCode
                 }
                 if (input[i] == input[((i + 1)% input.Length)])
                 {
-                    runningSum += Convert.ToInt32(input[i]);
+                    runningSum +=  (int)Char.GetNumericValue(input[i]);
                 }
             }
             return runningSum;
